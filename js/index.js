@@ -29,3 +29,23 @@ const riverImage = document.querySelector(".inverse-content .img-content img");
 riverImage.addEventListener("mouseover", e => {
   e.currentTarget.style.display = "none";
 });
+
+const footer = document.querySelector(".content-pick div:nth-child(2) p");
+footer.addEventListener("click", e => {
+  e.currentTarget.parentNode.style.background = "red";
+});
+
+const mainHeader = document.querySelector(".main-navigation");
+mainHeader.addEventListener("click", () => {
+  console.log("mainHeader was clicked!");
+});
+
+const firstPic = document.querySelector(".intro img");
+firstPic.addEventListener("mouseover", e => {
+  e.currentTarget.parentNode.style.color = "red";
+});
+
+const introText = document.querySelector("p");
+introText.addEventListener("dblclick", () => {
+  introText.style.background = "black";
+});
